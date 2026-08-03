@@ -93,10 +93,14 @@ kubectl auth can-i list pods -n prod --as=$SA
 ```
 
 ## Screenshots
-### 1. Caller Identity Output (sts get-caller-identity)![alt text](image/sts_caller_identity.png)
-### 2. Admin Group Membership Verification ![alt text](image/admin_group.png)
-### 3. Analyst Attached Read-Only Policy ![alt text](image/analyst_policy.png)
-### 4. Kubernetes RBAC Authorization Test Results ![alt text](image/rbac_can_i_results.png)
+### 1. Caller Identity Output (sts get-caller-identity)
+![sts get-caller-identity](image/sts_caller_identity.png)
+### 2. Admin Group Membership Verification 
+![admin_group](image/admin_group.png)
+### 3. Analyst Attached Read-Only Policy 
+![analyst_policy](image/analyst_policy.png)
+### 4. Kubernetes RBAC Authorization Test Results 
+![rbac_can_i_results](image/rbac_can_i_results.png)
 
 ## Verification Command Output
 Output of kubectl get rolebinding dev-user-binding -n dev -o yaml:
